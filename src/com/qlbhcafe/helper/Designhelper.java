@@ -192,23 +192,12 @@ public class Designhelper implements DesignInterFace {
                 @Override
                 public void mousePressed(MouseEvent e) {
 
-                    //filling the cartItems
-                    //   CTHoaDon ci = new CTHoaDon(itemcode, itemQuantity);//the one I want to remove
-                    /*  Iterator<CTHoaDon> itr = CTHD.iterator();
-                    while (itr.hasNext()) {
-                        CTHoaDon ci_itr = itr.next();
-                        if (ci_itr.getMaSanPham().getMaSP().equalsIgnoreCase(e.getComponent().getName())) {
-                            itr.remove();
-                            System.out.println("Thanh cong");
-                        }
-                        DesigDonHang(donhangUI, CTHD);
-                    }*/
+                 
                     CTHD.remove(CTHD.get(Integer.parseInt(e.getComponent().getName())));
-                    DesigDonHang(donhangUI, CTHD); //ssssssss
+                    DesigDonHang(donhangUI, CTHD); 
                 }
 
             });;
-//            pnl[i].add(new JLabel("1"), JLabel.LEFT);
             so = lblsoluong.getText();
             pnl[i].setToolTipText(so);
 
