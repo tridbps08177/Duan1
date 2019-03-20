@@ -204,7 +204,7 @@ public class Designhelper implements DesignInterFace {
                         DesigDonHang(donhangUI, CTHD);
                     }*/
                     CTHD.remove(CTHD.get(Integer.parseInt(e.getComponent().getName())));
-                    DesigDonHang(donhangUI, CTHD);
+                    DesigDonHang(donhangUI, CTHD); //ssssssss
                 }
 
             });;
